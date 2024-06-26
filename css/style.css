@@ -1,0 +1,79 @@
+/* Chaoqun Ding */
+
+@font-face {
+    font-family: salsa;
+    src: url(../fonts/Salsa/Salsa-Regular.ttf);
+}
+:root{
+    --main-color: #2f4f4f;
+    --default-gap-padding-border-radius: 10px;
+    --main-image-width: 240px;
+    --thumbnails-width: 70px;
+}
+#wrapper{
+    margin: auto;
+    max-width: 1080px;
+    min-height: 100vh;
+    display: grid;
+    gap: var(--default-gap-padding-border-radius);
+    grid-template-rows: auto 1fr auto;
+    font-family: salsa;
+    color: var(--main-color);
+    background-color: white;
+}
+header, footer{
+    color: white;
+    background-color: var(--main-color);
+    padding: var(--default-gap-padding-border-radius);
+    text-align: center;
+}
+#myform{
+    width: fit-content;
+    margin: auto;
+}
+#all-images{
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid 2px var(--main-color);
+}
+#main-image-box{
+    width: var(--main-image-width);
+    grid-area: 1/1/1/span 3;
+}
+.each-thumbnail-box{
+    width: var(--thumbnails-width);
+}
+#thumbnails1-box{
+    grid-area: 2/1/span 1/span 1;
+}
+#thumbnails1-box{
+    grid-area: 2/2/span 1/span 1;
+}
+#thumbnails1-box{
+    grid-area: 2/3/span 1/span 1;
+}
+img{
+    width: 100%;
+}
+fieldset{
+    border: none;
+}
+.options{
+    border: solid 2px var(--main-color);
+    border-radius: var(--default-gap-padding-border-radius);
+    margin: var(--default-gap-padding-border-radius);
+    padding: var(--default-gap-padding-border-radius);
+}
+#submit-box{
+    text-align: center;
+}
+#thankyou{
+    text-align: center;
+}
+@media (min-width: 460px) {
+    #myform{
+        display: flex;
+    }
+}

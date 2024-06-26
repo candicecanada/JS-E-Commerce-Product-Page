@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<!-- author: Chaoqun Ding -->
+	<head>
+		<title>Assignment 07 | COMP2132</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="../scripts/jquery-3.7.1.min.js"></script>
+        <script src="../scripts/assignment07.js" defer></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Assignment07 | COMP2132</h1>
+			</header>
+			<main>
+				<h2>After testing, if you want everything back to its initial state, simply refresh the page.</h2>
+				<form action="../html/thank-you.html" method="post" id="myform">
+					<div id="all-images">
+						<!-- main image -->
+						<div id="main-image-box">
+							<img src="../product-images/t-shirt-black-no-model.jpg" alt="Black T-shirt with No Model">
+						</div>
+						<!-- thumbnail images -->
+						<div class="each-thumbnail-box" id="thumbnail1-box">
+							<img class="thumbnails" src="../product-images/t-shirt-black-no-model.jpg" alt="Black T-shirt with No Model">
+						</div>
+						<div class="each-thumbnail-box" id="thumbnail2-box">
+							<img class="thumbnails" src="../product-images/t-shirt-black-front.jpg" alt="Black T-shirt Front">
+						</div>
+						<div class="each-thumbnail-box" id="thumbnail3-box">
+							<img class="thumbnails" src="../product-images/t-shirt-black-back.jpg" alt="Black T-shirt Back">
+						</div>
+					</div>
+					
+
+					<!-- all options -->
+					<div id="all-options">
+						<!-- color -->
+						<div id="color-box" class="options">
+							<fieldset>
+								<legend><strong>Color: </strong><span>Black</span></legend>
+								<div>
+									<input 	type="radio" 
+										id="black" 
+										name="color"
+										value="Black"
+										class = "unchecked" />	
+								<label 	for="black">Black</label>	
+								</div>
+								<div>
+									<input 	type="radio" 
+										id="red" 
+										name="color"
+										value="Red"
+										class = "unchecked" />	
+									<label 	for="red">Red</label>	
+								</div>
+								<div>
+									<input 	type="radio" 
+										id="grey" 
+										name="color"
+										value="Grey"
+										class = "unchecked" />	
+									<label 	for="grey">Grey</label>	
+								</div>
+							</fieldset>
+						</div>
+						<!-- size -->
+						<div id="size-box" class="options">
+							<fieldset>
+								<legend><strong>Size: </strong><span>Choose...</span></legend>
+								<div>
+									<input 	type="radio" 
+											id="small"
+											class="unchecked"
+											name="size"
+											value="Small S" />	
+									<label 	for="small">Small S</label>	
+								</div>
+								<div>
+									<input 	type="radio" 
+											id="medium"
+											class="unchecked"
+											name="size"
+											value="Medium M" />	
+									<label 	for="medium">Medium M</label>
+								</div>
+								<div>
+									<input 	type="radio" 
+											id="large"
+											class="unchecked"
+											name="size"
+											value="Large L" />	
+									<label 	for="large">Large L</label>	
+								</div>
+							</fieldset>
+						</div>
+						<!-- price -->
+						<div id="price-box" class="options">
+							<label><strong>Price: </strong><span id="unit-price">00</span></label>
+							<div>
+								<label for="quantity"></label>
+								<input type="number" name="quantity" id="quantity" min="1" value="1">
+							</div>
+							<div>
+								<label><strong>Total: </strong><span id="total-price">00</span></label>
+							</div>
+							
+						</div>
+						<div id="submit-box" class="options">
+						<input type="submit" value="Choose A Size" id="submit">
+					</div>
+					</div>
+					<!-- submit button -->
+					
+				</form>
+			</main>
+			<footer>
+				<h2>Assignment07 | COMP2132</h2>
+			</footer>
+		</div>
+		
+	</body>
+</html>
+
+
+
+
+
